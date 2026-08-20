@@ -23,22 +23,17 @@ that match your mood — built as an academic/portfolio project.
 
 ## Project structure
 
-​```text
-├── src/
-│   ├── model_def.py      # CNN architecture (shared by train/test/app)
-│   ├── train_model.py    # Trains the CNN on FER2013
-│   ├── test_model.py     # Sanity-checks the saved model on a sample image
-│   ├── recommend.py      # Loads Muse dataset, maps emotion -> songs
-│   └── app.py             # Streamlit app (main entry point)
-├── models/
-│   └── emotion_model.weights.h5   # Trained CNN weights
-├── data/
-│   ├── haarcascade_frontalface_default.xml
-│   ├── fer2013/           # Training images (not included in repo, see below)
-│   └── muse_v3.csv        # Song dataset (not included in repo, see below)
-├── requirements.txt
-└── README.md
-​```
+- `src/model_def.py` — CNN architecture (shared by train/test/app)
+- `src/train_model.py` — Trains the CNN on FER2013
+- `src/test_model.py` — Sanity-checks the saved model on a sample image
+- `src/recommend.py` — Loads Muse dataset, maps emotion to songs
+- `src/app.py` — Streamlit app (main entry point)
+- `models/emotion_model.weights.h5` — Trained CNN weights
+- `data/haarcascade_frontalface_default.xml` — Face detection classifier
+- `data/fer2013/` — Training images (not included in repo, see below)
+- `data/muse_v3.csv` — Song dataset (not included in repo, see below)
+- `requirements.txt` — Python dependencies
+- `README.md` — This file
 
 ## Model performance
 
