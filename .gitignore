@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Large datasets (see README for download instructions)
+data/fer2013/
+data/muse_v3.csv
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Streamlit
+.streamlit/
